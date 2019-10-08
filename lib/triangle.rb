@@ -8,7 +8,7 @@ class Triangle
   def kind
     if @triangle.any?(2) == @triangle.any?(2)
       return :isosceles
-    elsif @triangle.any(3) == @triangle.any (3)
+    elsif @triangle.any(3) == @triangle.any?(3)
       return :equilateral
     end
   end
