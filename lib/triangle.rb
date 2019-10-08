@@ -6,7 +6,7 @@ class Triangle
   end
 
   def kind
-    if @triangle.any(2) == @triangle.any(2)
+    if @triangle.any?(2) == @triangle.any(2)
       return :isosceles
     end
   end
