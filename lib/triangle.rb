@@ -1,3 +1,15 @@
 class Triangle
-  # write code here
+  attr_accessor :triangle
+
+  def initialize(side_1, side_2, side_3)
+    @triangle = [side_1, side_2, side_3]
+  end
+
+  def kind
+    if @triangle.any(2) == @triangle.any(2)
+      return :isosceles
+    end
+  end
+
+
 end
