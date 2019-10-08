@@ -1,15 +1,17 @@
 class Triangle
   attr_accessor :triangle
 
-  def initialize(side_1, side_2, side_3)
-    @triangle = [side_1, side_2, side_3]
+  def initialize(a:, b:, c:)
+
   end
 
-  def kind
-    if @triangle.any?(2) == @triangle.any?(2)
+  def kind(a:, b:, c:)
+    if ((a: == b:)) && (a: == c:) && (b: == c:))
+        return :equilateral
+    elsif ((a: == b:) || (a: == c:) || (b: == c:))
       return :isosceles
-    elsif @triangle.all? == @triangle.all?
-      return :equilateral
+    else
+      return :scalene
     end
   end
 
